@@ -1,0 +1,11 @@
+<div id="main">
+  <div id="content" [style.width.px]="contentWidth">
+    <p>Content</p>
+  </div>
+  <div id="separator" [style.width.px]="separatorWidth"  [(width)]="contentWidth" resizer >
+    <button (click)="toggleSize()">toggler</button>
+  </div>
+  <aside [style.width.px]="screenWidth - contentWidth">
+    <p>Aside</p>
+  </aside>
+</div>
